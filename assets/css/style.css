@@ -1,6 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap&subset=japanese");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Noto Serif JP", serif;
+    height: 100%;
     background-color: antiquewhite;
+}
+
+header {
+    height: 64px;
+    padding: 8px 10px 10px;
+    display: flex;
+    background-color: black;
+    a {
+        text-decoration: none;
+        color: white;
+        :hover {
+            color: lightgray;
+        }
+    }
+    nav ul {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        display: flex;
+        list-style: none;
+        a {
+            padding: 11px 20px 12px;
+            font-weight: bold;
+        }
+        :hover {
+            color: lightgray;
+        }
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    top: 100vh;
+    position: sticky;
+    background-color: black;
+    color: white;
+    padding: 8px 10px 10px;
+    text-align: center;
+    p {
+        padding: 11px 20px 12px;
+        a {
+            color: white;
+        }
+        :hover {
+            color: lightgray;
+        }
+    }
 }
